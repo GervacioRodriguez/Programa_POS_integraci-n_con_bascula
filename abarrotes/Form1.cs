@@ -39,5 +39,19 @@ namespace abarrotes
             cataproductos ctp = new cataproductos();
             ctp.Show();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cliente ctl = new cliente();
+            ctl.TopLevel = false;
+            panel_principal.Controls.Add(ctl);
+            ctl.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cliente v_cliente = new cliente();
+            
+        }
     }
 }

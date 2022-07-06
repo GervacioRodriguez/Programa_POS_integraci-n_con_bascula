@@ -78,7 +78,7 @@ namespace abarrotes.conn
 
             try
             {
-                MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT codbar,codcorto,unidad,descripcion,existencia,pc,pv,foto FROM producto ", Obtnerconexion());
+                MySqlDataAdapter adaptador = new MySqlDataAdapter("SELECT * FROM producto ", Obtnerconexion());
                 DataTable tablita = new DataTable();
                 adaptador.Fill(tablita);
                 dgv.DataSource = tablita;

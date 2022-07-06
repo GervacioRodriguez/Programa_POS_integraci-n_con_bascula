@@ -29,7 +29,7 @@ namespace abarrotes
             string telefono1 = txttel1.Text;
             string telefono2 = txttel2.Text;
 
-            string guardar = "INSERT INTO `clientes`(`Nombre`, `RFC`, `calle`, `tel_1`, `tel_2`, `email_1`, `email_2`) VALUES ('"+cbxNombre.Text+"','"+txtRazonSocial.Text+"','"+txtRFC.Text+"','"+txtEmail1.Text+"','"+txttel1.Text+"');";
+            string guardar = "INSERT INTO clientes VALUES ('"+cbxNombre.Text+"','"+txtRazonSocial.Text+"','"+txtRFC.Text+"','"+txtEmail1.Text+"','"+txttel1.Text+"');";
             MySqlCommand almacenar = new MySqlCommand(guardar,conn.conexion.Obtnerconexion());
             almacenar.ExecuteNonQuery();
             conn.conexion.Obtnerconexion();

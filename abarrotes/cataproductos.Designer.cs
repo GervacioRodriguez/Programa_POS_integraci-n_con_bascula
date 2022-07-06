@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnguardar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -55,7 +56,8 @@
             this.dgtproducto = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.btnNuevo = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgtproducto)).BeginInit();
@@ -144,9 +146,9 @@
             // 
             // txtprecompra
             // 
-            this.txtprecompra.Location = new System.Drawing.Point(119, 226);
+            this.txtprecompra.Location = new System.Drawing.Point(131, 226);
             this.txtprecompra.Name = "txtprecompra";
-            this.txtprecompra.Size = new System.Drawing.Size(97, 20);
+            this.txtprecompra.Size = new System.Drawing.Size(85, 20);
             this.txtprecompra.TabIndex = 10;
             // 
             // label5
@@ -160,9 +162,9 @@
             // 
             // txtpreventa
             // 
-            this.txtpreventa.Location = new System.Drawing.Point(229, 226);
+            this.txtpreventa.Location = new System.Drawing.Point(244, 226);
             this.txtpreventa.Name = "txtpreventa";
-            this.txtpreventa.Size = new System.Drawing.Size(102, 20);
+            this.txtpreventa.Size = new System.Drawing.Size(87, 20);
             this.txtpreventa.TabIndex = 12;
             // 
             // label7
@@ -186,6 +188,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.radioButton4);
             this.groupBox1.Controls.Add(this.radioButton3);
@@ -216,6 +220,16 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion del producto";
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(526, 47);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(99, 42);
+            this.btnNuevo.TabIndex = 30;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // radioButton4
             // 
@@ -330,20 +344,28 @@
             this.txtbuscar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtbuscar.Location = new System.Drawing.Point(12, 355);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(681, 20);
+            this.txtbuscar.Size = new System.Drawing.Size(631, 20);
             this.txtbuscar.TabIndex = 25;
             this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
             this.txtbuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbuscar_KeyPress);
             // 
-            // btnNuevo
+            // label9
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(526, 47);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(99, 42);
-            this.btnNuevo.TabIndex = 30;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(225, 229);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "$";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(115, 229);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(13, 13);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "$";
             // 
             // cataproductos
             // 
@@ -395,5 +417,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
     }
 }
